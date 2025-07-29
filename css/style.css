@@ -1,0 +1,277 @@
+/* Tema Dark Geral */
+/* Tema com imagem de fundo */
+body {
+  background: url('../assets/bg_img.jpg') no-repeat center center fixed;
+  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #f5f5f5;
+}
+
+
+/* Centraliza os cards */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: transparent;
+}
+
+/* Estilo para os cards presentes em hb.html */
+.card {
+  background: #1c1c1c; /* Fundo escuro */
+  color: #f5f5f5; /* Cor clara para o texto */
+  border: 1px solid #333; /* Borda sutil para separação */
+  border-radius: 12px; /* Bordas levemente arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Sombra para destaque */
+  transition: transform 0.3s, box-shadow 0.3s; /* Suavidade nas interações */
+}
+
+/* Efeito ao passar o mouse sobre um card */
+.card:hover {
+  transform: scale(1.02); /* Leve aumento ao passar o mouse */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.9); /* Realce da sombra no hover */
+}
+
+/* Estilo para os títulos dos cards */
+.card-title {
+  color: #6dd5fa; /* Cor azul claro para os títulos */
+  font-weight: bold; /* Destaque nos títulos */
+}
+
+/* Estilo para as tabelas dentro dos cards */
+.card .table {
+  background: #2c2c2c; /* Fundo escuro para as tabelas */
+  color: #f5f5f5; /* Texto claro */
+  border-color: #444; /* Bordas mais suaves */
+}
+
+/* Estilo para os cabeçalhos das tabelas */
+.card .table thead {
+  background: #333; /* Fundo mais escuro para o cabeçalho */
+  color: #f5f5f5; /* Texto claro */
+  font-weight: bold; /* Cabeçalhos em negrito */
+}
+
+/* Links dentro dos cards */
+.card a {
+  color: #6dd5fa; /* Azul claro */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold;
+}
+
+.card a:hover {
+  color: #29a3d6; /* Azul mais escuro no hover */
+  text-decoration: underline; /* Sublinha no hover */
+}
+
+/* Estilo para botões dentro dos cards */
+.card .btn {
+  background: #27ae60; /* Botão verde escuro */
+  color: #fff; /* Texto branco */
+  border: none; /* Remove bordas padrão */
+  border-radius: 8px; /* Botões arredondados */
+  font-weight: bold; /* Destaca o texto */
+  transition: background 0.3s;
+}
+
+.card .btn:hover {
+  background: #229954; /* Escurece o botão no hover */
+  cursor: pointer; /* Cursor de ação */
+}
+
+
+.card-title {
+  font-weight: 700;
+  color: #f5f5f5;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+input.form-control, input[type="password"], input[type="email"] {
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #333;
+  color: #f5f5f5;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+input.form-control:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 0 0.2rem rgba(41, 128, 185, 0.5);
+  background: #444;
+}
+
+.btn-success, .btn-primary {
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: background 0.2s;
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #27ae60 60%, #2ecc71 100%);
+  border: none;
+  color: #fff;
+}
+
+.btn-success:disabled {
+  background: #555;
+  color: #aaa;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #2980b9 60%, #6dd5fa 100%);
+  border: none;
+  color: #fff;
+}
+
+.btn-secondary {
+  border-radius: 8px;
+  background: #555;
+  color: #fff;
+  border: none;
+}
+
+a, a:visited {
+  color: #6dd5fa;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #29a3d6;
+}
+
+.msg-erro, .error {
+  color: #e74c3c;
+  font-size: 0.95em;
+  margin-top: 2px;
+  min-height: 18px;
+}
+
+#cadastroMsg.sucesso, .success {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+#cadastroMsg.erro {
+  color: #e74c3c;
+}
+
+.d-grid .btn {
+  margin-bottom: 8px;
+}
+
+/* Ajusta a exibição da logo */
+.logo {
+  display: block;
+  max-width: 100%;
+  width: 150px; /* Ajusta a largura da imagem */
+  height: 150px; /* Define uma altura para manter a proporção */
+  margin: 20px auto; /* Adiciona espaço ao redor e centraliza no eixo horizontal */
+  border-radius: 50%; /* Torna os cantos arredondados (forma de círculo) */
+  object-fit: cover; /* Adapta o conteúdo da imagem ao espaço definido */
+  border: 2px solid #f5f5f5; /* Opcional: adiciona uma borda para destacar a imagem */
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 18px 8px;
+  }
+  .container {
+    padding: 0;
+  }
+}
+/* Estilo para o link "Criar nova conta" em vermelho */
+.text-center a {
+  color: red; /* Define a cor do link como vermelho */
+  text-decoration: underline; /* Mantém o sublinhado padrão */
+  font-weight: bold; /* Opcional: Deixa o texto em negrito */
+}
+
+.text-center a:hover {
+  color: darkred; /* Torna a cor mais escura quando o cursor está sobre o link */
+}
+/* Gradiente esverdeado para o botão "Criar Conta" */
+#btnCriarConta {
+  background: linear-gradient(90deg, #27ae60 0%, #2ecc71 100%); /* Gradiente esverdeado */
+  border: none; /* Remove possível borda */
+  color: white; /* Altera a cor do texto para branco */
+  font-weight: bold; /* Deixa o texto mais destacado */
+  border-radius: 8px; /* Suaviza os cantos do botão */
+  padding: 10px 20px; /* Ajusta o espaçamento interno */
+  transition: background 0.3s; /* Adiciona uma suavização no hover */
+}
+
+/* Alteração de cor no hover do botão */
+#btnCriarConta:hover {
+  background: linear-gradient(90deg, #229954 0%, #27ae60 100%); /* Gradiente mais escuro no hover */
+  cursor: pointer; /* Muda o cursor para indicar ação clicável */
+}
+
+/* Estilo para o botão desativado */
+#btnCriarConta:disabled {
+  background: #555; /* Cor cinza para indicar que está desativado */
+  cursor: not-allowed; /* Mostra que o botão não pode ser clicado */
+  color: #aaa; /* Cor do texto quando desativado */
+}
+/* Estilo para os cards da tela principal */
+.card-dark {
+  background: #1c1c1c; /* Fundo escuro */
+  color: #f5f5f5; /* Cor clara para o texto */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Sombreamento para destaque */
+  border: 1px solid #333; /* Borda sutil para separação */
+  padding: 20px; /* Espaçamento interno */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animação suave */
+}
+
+/* Hover para os cards */
+.card-dark:hover {
+  transform: scale(1.03); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.9); /* Destaque maior no hover */
+}
+
+/* Estilo para o título dentro dos cards */
+.card-dark .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6dd5fa; /* Destaque azul claro para o título */
+}
+
+/* Estilo para links dentro dos cards */
+.card-dark a {
+  color: #6dd5fa; /* Azul claro para os links */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  font-weight: bold;
+}
+
+.card-dark a:hover {
+  color: #29a3d6; /* Azul mais escuro ao passar o mouse */
+  text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+/* Torna background do card transparente e remove sombra */
+.card-transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+/* Estilo para o logo no canto superior esquerdo */
+.logo-superior {
+  height: 100px;                    /* Define a altura maior para o logo */
+  width: 100px;                     /* Deixa o logo quadrado (proporcional) */
+  position: absolute;
+  top: 20px;                        /* Ajusta a posição superior */
+  left: 20px;                       /* Ajusta a posição à esquerda */
+  border-radius: 50%;               /* Torna a imagem circular */
+  border: 2px solid #ffffff;        /* Adiciona borda branca (ajustável) */
+  object-fit: cover;                /* Garante que a imagem se ajuste perfeitamente */
+  z-index: 1000;                    /* Mantém o logo acima de outros elementos */
+  background-color: #ffffff;        /* Adiciona um fundo branco caso a imagem tenha transparência */
+}
