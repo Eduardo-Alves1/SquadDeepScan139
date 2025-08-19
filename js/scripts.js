@@ -104,7 +104,7 @@ function login() {
   const user = usuarios[cpf];
   if (user && user.senha === senha) {
     localStorage.setItem('usuarioLogado', cpf);
-    window.location.href = "hb.html";
+    window.location.href = "index.html";
   } else {
     document.getElementById('loginMsg').innerText = "CPF ou senha inválidos.";
   }
@@ -185,7 +185,7 @@ function criarConta() {
   salvarUsuariosEContas();
   setTimeout(() => {
     localStorage.setItem('usuarioLogado', cpf);
-    window.location.href = "hb.html";
+    window.location.href = "index.html";
   }, 1200);
 }
 function msgCadastro(msg, sucesso) {
